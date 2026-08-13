@@ -1,16 +1,22 @@
-import { Header, Hero, Footer, Service, Postcard} from "./_components";
-
+import {
+  Header,
+  Hero,
+  Footer,
+  Service,
+  CardPost,
+  Bichver,
+} from "./_components";
 
 const Home = () => {
-  return ( 
+  return (
     <div>
-   <Header />
-   <Hero />
-   <Footer />
-   <Service />
-   <Postcard />
- </div>
-
+      <Header />
+      <Hero />
+      <Footer />
+      <Service />
+      <CardPost />
+      <Bichver />
+    </div>
   );
 };
 
