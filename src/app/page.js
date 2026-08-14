@@ -5,6 +5,10 @@ import {
   Service,
   CardPost,
   Bichver,
+  Case,
+  Learn,
+  Process,
+  Grid,
 } from "./_components";
 
 const Home = () => {
@@ -16,6 +20,10 @@ const Home = () => {
       <Service />
       <CardPost />
       <Bichver />
+      <Case />
+      <Learn />
+      <Process />
+      <Grid />
     </div>
   );
 };

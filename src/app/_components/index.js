@@ -4,3 +4,7 @@ export * from "./Footer";
 export * from "./Service";
 export * from "./CardPost";
 export * from "./Bichver";
+export * from "./Case";
+export * from "./Learn";
+export * from "./Process";
+export * from "./Grid";
