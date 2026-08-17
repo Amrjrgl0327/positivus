@@ -9,6 +9,13 @@ import {
   Learn,
   Process,
   Grid,
+  Team,
+  TeamCard,
+  Client,
+  Navigation,
+  Contact,
+  ContactCard,
+  Footer1,
 } from "./_components";
 
 const Home = () => {
@@ -24,6 +31,13 @@ const Home = () => {
       <Learn />
       <Process />
       <Grid />
+      <Team />
+      <TeamCard />
+      <Client />
+      <Navigation />
+      <Contact />
+      <ContactCard />
+      <Footer1 />
     </div>
   );
 };
