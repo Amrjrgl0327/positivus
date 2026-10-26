@@ -1,48 +1,59 @@
 const data = [
   {
-    backgroundColor: "green",
-    text: "01 Consultation",
+    backgroundColor: "#B9FF66",
+    number: "01",
+    text: "Consultation",
     description:
       "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
-    icon: "/Plus1.png",
+    icon: "/plus1.png",
   },
 
   {
-    backgroundColor: "gray",
-
-    text: "02 Research and Strategy Development",
+    backgroundColor: "#F3F3F3",
+    number: "02",
+    text: "Research and Strategy Development",
     icon: "/Plus.png",
   },
 
   {
-    backgroundColor: "gray",
-    text: " 03 Implementation",
+    backgroundColor: "#F3F3F3",
+    number: "03",
+    text: "Implementation",
     icon: "/Plus.png",
   },
 
   {
-    backgroundColor: "gray",
-    text: "04 Monitoring and Optimization",
+    backgroundColor: "#F3F3F3",
+    number: "04",
+    text: "Monitoring and Optimization",
     icon: "/Plus.png",
   },
 
   {
-    backgroundColor: "gray",
-    text: "05 Reporting and Communication",
+    backgroundColor: "#F3F3F3",
+    number: "05",
+    text: "Reporting and Communication",
     icon: "/Plus.png",
   },
 
   {
-    backgroundColor: "gray",
-    text: "06 Continual Improvement",
+    backgroundColor: "#F3F3F3",
+    number: "06",
+    text: "Continual Improvement",
     icon: "/Plus.png",
   },
 ];
 
 const Card = (props) => {
   return (
-    <div className="p-4 rounded-lg border" style={{ backgroundColor: props.a }}>
-      {props.text}
+    <div
+      className="px-[25] py-[25] rounded-[45] border flex justify-between"
+      style={{ backgroundColor: props.a }}
+    >
+      <div className="flex items-center gap-2.5 px-25 py-10 w-[1117] h-[77]">
+        <div className="text-4xl">{props.number}</div>
+        <div className="text-2xl">{props.text}</div>
+      </div>
       {props.description}
       <img src={props.img} />
     </div>
@@ -56,6 +67,7 @@ export const Grid = () => {
         return (
           <Card
             key={item.text}
+            number={item.number}
             text={item.text}
             a={item.backgroundColor}
             description={item.description}

@@ -11,6 +11,7 @@ import {
   Grid,
   Team,
   TeamCard,
+  See,
   Client,
   Navigation,
   Contact,
@@ -33,6 +34,7 @@ const Home = () => {
       <Grid />
       <Team />
       <TeamCard />
+      <See />
       <Client />
       <Navigation />
       <Contact />

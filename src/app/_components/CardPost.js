@@ -17,7 +17,7 @@ export const CardPost = () => {
           </div>
 
           <div className="flex ">
-            <img className="w-50 h-50" src="/Elements1.png" />
+            <img className="w-50 h-50" src="/elements1.png" />
           </div>
         </div>
 

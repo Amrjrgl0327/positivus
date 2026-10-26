@@ -1,7 +1,7 @@
 const data = [
   {
-    picture: "/mask.png",
-    icon: "/Social icon.png",
+    picture: "/Mask.png",
+    icon: "/Social.png",
     name: "John Smith",
     posision: "CEO and Founder",
     experiance:
@@ -9,8 +9,8 @@ const data = [
   },
 
   {
-    picture: "/mask1.png",
-    icon: "/Social icon.png",
+    picture: "/Mask1.png",
+    icon: "/Social.png",
     name: "Jane Doe",
     posision: "Director of Operations",
     experiance:
@@ -18,8 +18,8 @@ const data = [
   },
 
   {
-    picture: "/mask2.png",
-    icon: "/Social icon.png",
+    picture: "/Mask2.png",
+    icon: "/Social.png",
     name: "Michael Brown",
     posision: "Senior SEO Specialist",
     experiance:
@@ -27,8 +27,8 @@ const data = [
   },
 
   {
-    picture: "/mask3.png",
-    icon: "/Social icon.png",
+    picture: "/Mask3.png",
+    icon: "/Social.png",
     name: "Emily Johnson",
     posision: "PPC Manager",
     experiance:
@@ -36,8 +36,8 @@ const data = [
   },
 
   {
-    picture: "/mask4.png",
-    icon: "/Social icon.png",
+    picture: "/Mask4.png",
+    icon: "/Social.png",
     name: "Brian Williams",
     posision: "Social Media Specialist",
     experiance:
@@ -45,28 +45,30 @@ const data = [
   },
 
   {
-    picture: "/mask5.png",
-    icon: "/Social icon.png",
+    picture: "/Mask5.png",
+    icon: "/Social.png",
     name: "Sarah Kim",
     posision: "Content Creator",
     experiance:
       "2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries",
   },
-
-  {
-    text: "See all team",
-  },
 ];
 
 const Card = (props) => {
   return (
-    <div className="p-4 rounded-lg border" style={{ icon: props.a }}>
-      <img src={props.img} />
-      {props.name}
-      {props.posision}
-      <img src={props.a} />
-      {props.experiance}
-      {props.text}
+    <div
+      className="w-[387] h-[331] p-4 rounded-[45] border"
+      style={{ icon: props.a }}
+    >
+      <div className="flex gap-5">
+        <img src={props.img} />
+        <div className="flex flex-col">
+          {props.name}
+          {props.posision}
+        </div>
+        <img src={props.a} />
+      </div>
+      <div className="flex items-end gap-[28]">{props.experiance}</div>
     </div>
   );
 };
@@ -83,7 +85,6 @@ export const TeamCard = () => {
             posision={item.posision}
             a={item.icon}
             experiance={item.experiance}
-            text={item.text}
           />
         );
       })}

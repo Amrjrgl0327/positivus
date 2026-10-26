@@ -10,6 +10,7 @@ export * from "./Process";
 export * from "./Grid";
 export * from "./Team";
 export * from "./TeamCard";
+export * from "./See";
 export * from "./Client";
 export * from "./Navigation";
 export * from "./Contact";
